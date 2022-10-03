@@ -1,7 +1,5 @@
 <?php
 
-/*$numberOne = 1;*/
-
 $numberOne = "<ul>";
 
 $subNums = '';
@@ -24,24 +22,7 @@ $subNums = '';
 
     $numberOne .= "</ul>";
 
-
-/*$subOne = array(1, 2, 3, 4);
-
-for ($i=1; $i<=5; $i++) {
-
-    echo "$i<br>";
-
-}*/
-
-
-/*$SubOne = for ($i=1; Si <=10; $i++) {
-
-    echo "$i<br>";
-}*/
-
 ?>
-
-
 
 
 

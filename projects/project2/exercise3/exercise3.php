@@ -4,9 +4,8 @@ $table = "<table border='1'>";
 
     for ($i=1; $i<16; $i++) {
 
-            $table .= "<tr>$i";
+            $table .= "<tr>";
 
-            $table .= "<td>";
         for ($j=1; $j<=5; $j++) {
 
             $table .= "<td> Row $i Cell $j";
@@ -19,14 +18,15 @@ $table = "<table border='1'>";
     }
 
     $table .= "</table>";
-    
+
 ?>
 
 
 
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,15 +35,7 @@ $table = "<table border='1'>";
 </head>
 <body>
     
-    <table>
-
-        <tbody>
-
-            <td><?php echo $table;?></td>
-
-        </tbody>
-
-    </table>
+    <?php echo $table;?>
 
 </body>
 </html>
