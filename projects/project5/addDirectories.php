@@ -2,7 +2,7 @@
 
 $msg = "";
 $addDirectory = "";
-//error_reporting(0);
+
 
 class directories {
 
