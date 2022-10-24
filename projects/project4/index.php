@@ -1,5 +1,7 @@
 <?php
 
+$output = "";
+
 if(count($_POST) > 0){
     require_once 'addNames.php';
     $addNames = new addNames();

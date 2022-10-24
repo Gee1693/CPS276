@@ -1,5 +1,6 @@
 <?php
 
+
 class addNames {
 
     public function addClearNames() {
@@ -8,9 +9,13 @@ class addNames {
             if($value === ""){
 
                 echo "";
+                
         
             }
+            
         }
+
+        
 
 
         if(isset($_POST['addName'])){
@@ -31,7 +36,7 @@ class addNames {
 
         }
         
-        else if(isset($_POST['clearNames'])){
+        else if (isset($_POST['clearNames'])){
 
             return "";
            
