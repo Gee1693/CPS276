@@ -1,7 +1,7 @@
 <?php
 
-$msg = "";
-$addDirectory = "";
+//$msg = "";
+//$addDirectory = "";
 
 
 class directories {
@@ -17,7 +17,7 @@ class directories {
 
 
             //ADDS THE README.TXT FILE INTO THE USER CREATED DIRECTORY
-            chmod("directories/" .$_POST["folderName"]."/" ."readme.txt", 0777);
+            chmod("directories/" .$_POST["folderName"] ."/" ."readme.txt", 0777);
 
             
             //ADDS USER TEXT INSIDE THE README.TXT FILE
@@ -31,7 +31,7 @@ class directories {
             if ($addDirectory) {
                 $msg = "File and directory were created";
                 $msg .= "<p><a href='directories/".$_POST['folderName']."/readme.txt'>Path where file is located</a></p>";
-                $msg = '';
+                
             }
             else {
                 $msg = "A directory already exist with that name";
@@ -40,12 +40,6 @@ class directories {
             }
 
             return $msg;
-
-            if (file_exists($addDirectory)) {
-
-              return $output;
-
-          }
             
 
         }
