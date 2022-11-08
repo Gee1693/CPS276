@@ -9,12 +9,6 @@ class upload {
             //TEST 1
             $addFile = fopen("pdfFolder/" .$_POST['fileName'], "w");
             
-            
-            //TEST 2
-            /*$uploadFile = fopen("pdfFolder/pdf.file");
-            $content = $_POST['fileName'] .$_FILES['pdf'];
-            fwrite($uploadFile, $content);
-            fclose($uploadFile);*/
 
             $file = fopen("pdfFolder/" ."file.pdf", "w");
             $content = $_POST["fileName"];
@@ -45,7 +39,6 @@ class upload {
 
             if ($addFile) {
                 $msg2 = "File and directory were created";
-                //$msg .= "<p><a href='directories/".$_POST['folderName']."/readme.txt'>Path where file is located</a></p>";
                 
             }
 
