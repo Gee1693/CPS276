@@ -43,6 +43,13 @@ class upload {
 
     }
 
+ 
+
 }
+
+$johnLennonsBirthday = strtotime("October 9, 1940");
+$d = getdate( $johnLennonsBirthday );
+
+echo $d['mday'];
 
 ?>
