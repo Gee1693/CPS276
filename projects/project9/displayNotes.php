@@ -38,12 +38,12 @@ $output = $notes->displayNotes();
 
             <div>
                 <label for="startDate" class="form-label">Beginning Date</label>
-                <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+                <input type="date" class="form-control" id="startDate" name="startDate">
             </div>
 
             <div>
                 <label for="endDate" class="form-label">Ending Date</label>
-                <input type="datetime-local" class="form-control" id="endDate" name="endDate">
+                <input type="date" class="form-control" id="endDate" name="endDate">
             </div>
 
             <div class="gx-3">

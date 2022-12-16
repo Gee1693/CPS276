@@ -44,7 +44,7 @@ class notes {
 
         if (isset($_POST['getNotes'])) {
 
-            $date = getdate($sql);
+            $date = getdate($timestamp);
 
             $getdate = $date['mon'] ."/" . $date["mday"] ."/" .$date["year"] ." " .$date["hours"] . ":" .$date["minutes"];
 
@@ -54,8 +54,8 @@ class notes {
 
             $bindings = [
                 
-                [':begDate', $date, 'str'],
-                [':endDate', $date, 'str'],
+                [':begDate', $timestamp, 'str'],
+                [':endDate', $timestamp, 'str'],
             ];
 
             $records = $pdo->selectBinded($sql, $bindings);
